@@ -342,10 +342,10 @@ export default function Data() {
                 <section className="mb-8 p-8 max-w-4xl mx-auto text-center">
                     <p className="text-lg leading-relaxed mb-8">
                         These data visualizations originate from our
-                        comprehensive <strong>Scorecard!</strong>
+                        comprehensive Scorecard.
                         <br />
-                        All of our data is available in our scorecard via the
-                        button below.{" "}
+                        Check out our scorecard for all of our most updated and
+                        available data.{" "}
                     </p>
                     <div className="flex justify-center">
                         <Button

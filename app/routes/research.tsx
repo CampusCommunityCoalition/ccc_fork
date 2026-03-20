@@ -39,10 +39,10 @@ export default function Research() {
                         use; if you do use one of our resources, we'd love to
                         know about it! <br /> Let us know by e-mailing{" "}
                         <a
-                            href="mailto:ccc@downtownchapelhill.com"
+                            href="mailto:ccc@campusandcommunitycoalition.org"
                             className="text-[#499ED7]  hover:text-blue-500 font-medium underline"
                         >
-                            ccc@downtownchapelhill.com
+                            ccc@campusandcommunitycoalition.org
                         </a>
                         .
                     </p>

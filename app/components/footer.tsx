@@ -143,14 +143,14 @@ export default function Footer() {
                         style={{ width: "32px", height: "32px" }}
                     />
                     <a
-                        href="mailto:ccc@downtownchapelhill.com"
+                        href="mailto:ccc@campusandcommunitycoalition.org"
                         style={{
                             color: "white",
                             textDecoration: "none",
                             margin: 0,
                         }}
                     >
-                        ccc@downtownchapelhill.com
+                        ccc@campusandcommunitycoalition.org
                     </a>
                 </div>
             </div>

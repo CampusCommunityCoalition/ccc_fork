@@ -29,8 +29,8 @@ export default function Home() {
                     <div className="h-full flex items-center">
                         <div className="ml-[8%] flex flex-col gap-6">
                             <h1 className="text-white text-3xl md:text-4xl font-bold max-w-[40vw]">
-                                A catalyst for community collaboration against
-                                high-risk drinking.
+                                A catalyst for community collaboration to
+                                prevent high-risk drinking.
                             </h1>
                             <button
                                 onClick={scrollToTarget}

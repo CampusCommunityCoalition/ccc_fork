@@ -50,10 +50,10 @@ export default function People() {
                             Campus & Community Coalition Director
                         </p>
                         <a
-                            href="mailto:samantha@downtownchapelhill.com"
+                            href="mailto:samantha@campusandcommunitycoalition.org"
                             className="font-figtree italic text-[20px] text-[#499ED7] hover:text-blue-500 font-medium underline mb-2"
                         >
-                            samantha@downtownchapelhill.com
+                            samantha@campusandcommunitycoalition.org
                         </a>
                         <p
                             style={{
@@ -356,7 +356,7 @@ export default function People() {
                             marginBottom: "32px",
                         }}
                     >
-                        Former Contributors
+                        Founding Contributors
                     </p>
                     <p
                         style={{
