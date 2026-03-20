@@ -344,8 +344,8 @@ export default function Data() {
                         These data visualizations originate from our
                         comprehensive Scorecard.
                         <br />
-                        Check out our scorecard for all of our most updated and
-                        available data.{" "}
+                        Click on the button below for our most updated available
+                        data.{" "}
                     </p>
                     <div className="flex justify-center">
                         <Button
