@@ -410,7 +410,9 @@ export default function People() {
                                     </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Carpe Diem & Mini Diem
+                                    <PartnerLink href="https://www.carpediemnc.org/">
+                                        Carpe Diem & Mini Diem
+                                    <PartnerLink>
                                 </p>
                             </div>
 
