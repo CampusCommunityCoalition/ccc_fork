@@ -11,7 +11,6 @@ import report3 from "app/assets/CCC-UNC-SWCCC-CoD-Final-Report.Report.3.pdf";
 import report4 from "app/assets/CCC-The-Burden-of-Excessive-Drinking-in-Orange-County-NC-Final-Report.Report.4.pdf";
 import polysubPresentation from "app/assets/Polysub - Community Presentation (2026).pdf";
 import polysubReport from "app/assets/Polysub - Data Analysis Report (2026).pdf";
-import TestPDF from "app/assets/TestPDF.pdf";
 
 export function meta() {
     return [{ title: "CCC | Resources" }];
@@ -120,14 +119,6 @@ export default function Research() {
                                                 openPDF(polysubReport),
                                         },
                                     ]}
-                                />
-                                <ReportCard
-                                    title="TestPDF"
-                                    summary="TEST    ly LGBTQ+ individuals and students of color, face disproportionate mental health and safety harms from the campus alcohol culture despite drinking less than their white, non-LGBTQ+ peers."
-                                    buttonText="View Report"
-                                    onClick={() => {
-                                        openPDF(TestPDF);
-                                    }}
                                 />
                             </div>
                         </section>
