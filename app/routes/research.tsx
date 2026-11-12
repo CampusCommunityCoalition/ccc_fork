@@ -9,6 +9,8 @@ import report1 from "app/assets/Town-Gown-Full-Report_final.Report.1.pdf";
 import report2 from "app/assets/Community-level-consequences-of-high-risk-drinking_final.Report.2.pdf";
 import report3 from "app/assets/CCC-UNC-SWCCC-CoD-Final-Report.Report.3.pdf";
 import report4 from "app/assets/CCC-The-Burden-of-Excessive-Drinking-in-Orange-County-NC-Final-Report.Report.4.pdf";
+import polysubPresentation from "app/assets/Polysub - Community Presentation (2026).pdf";
+import polysubReport from "app/assets/Polysub - Data Analysis Report (2026).pdf";
 
 export function meta() {
     return [{ title: "CCC | Resources" }];
@@ -100,6 +102,23 @@ export default function Research() {
                                     onClick={() => {
                                         openPDF(report3);
                                     }}
+                                />
+                                <ReportCard
+                                    className="md:col-span-2"
+                                    title="Alcohol and Polysubstance Use in Chapel Hill"
+                                    summary="Alcohol, drug use, and polysubstance use are widespread on college campuses and result in significant consequential behaviors. Using qualitative methods, public health graduate students assessed polysubstance behaviors among UNC-CH students and generated recommendations for preventing associated harms. Student alcohol and substance use perceptions are shaped by social environments, norms, and culture. Decisions around use are influenced by stress, peers, and access. While harm reduction strategies exist, they are often inconsistently used, or limited by stigma and a lack of practical education. Findings highlight the need to shift both institutional and peer norms to better support safety around polysubstance use among UNC students."
+                                    buttons={[
+                                        {
+                                            text: "Community Presentation",
+                                            onClick: () =>
+                                                openPDF(polysubPresentation),
+                                        },
+                                        {
+                                            text: "View Report",
+                                            onClick: () =>
+                                                openPDF(polysubReport),
+                                        },
+                                    ]}
                                 />
                             </div>
                         </section>

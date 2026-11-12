@@ -12,6 +12,25 @@ export function meta() {
     return [{ title: "CCC | People" }];
 }
 
+function PartnerLink({
+    href,
+    children,
+}: {
+    href: string;
+    children: React.ReactNode;
+}) {
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#499ED7] hover:underline"
+        >
+            {children}
+        </a>
+    );
+}
+
 export default function People() {
     return (
         <div className="min-h-screen flex flex-col">
@@ -103,8 +122,8 @@ export default function People() {
                                 role="UNC-Chapel Hill"
                             />
                             <PartnerInfo
-                                title="Loryn Clark, A.I.C.P."
-                                text="Deputy Town Manager"
+                                title="Shay Stevens, MBA"
+                                text="Community Relations Manager"
                                 role="Town of Chapel Hill"
                             />
                             <PartnerInfo
@@ -164,47 +183,95 @@ export default function People() {
                                         letterSpacing: "0px",
                                     }}
                                 >
-                                    Student Affairs
+                                    <PartnerLink href="https://students.unc.edu/">
+                                        Student Success
+                                    </PartnerLink>
                                 </h2>
                                 <ul className={styles.studentAffairsList}>
-                                    <li>Off-Campus Student Life</li>
-                                    <li>Student Wellness</li>
                                     <li>
-                                        Office of Fraternity & Sorority Life
+                                        <PartnerLink href="https://offcampus.unc.edu">
+                                            Off-Campus Student Life
+                                        </PartnerLink>
                                     </li>
                                     <li>
-                                        Violence Prevention and Advocacy
-                                        Services
+                                        <PartnerLink href="https://studentwellness.unc.edu/">
+                                            Student Wellness
+                                        </PartnerLink>
                                     </li>
-                                    <li>Office of Student Conduct</li>
-                                    <li>Student Life & Leadership</li>
-                                    <li>Campus Recreation</li>
+                                    <li>
+                                        <PartnerLink href="https://fsl.unc.edu/">
+                                            Office of Fraternity & Sorority Life
+                                        </PartnerLink>
+                                    </li>
+                                    <li>
+                                        <PartnerLink href="https://vpas.unc.edu/">
+                                            Violence Prevention and Advocacy
+                                            Services
+                                        </PartnerLink>
+                                    </li>
+                                    <li>
+                                        <PartnerLink href="https://studentconduct.unc.edu/">
+                                            Office of Student Conduct
+                                        </PartnerLink>
+                                    </li>
+                                    <li>
+                                        <PartnerLink href="https://carolinaunion.unc.edu/departments/student-life-leadership/">
+                                            Student Life & Leadership
+                                        </PartnerLink>
+                                    </li>
+                                    <li>
+                                        <PartnerLink href="https://campusrec.unc.edu/">
+                                            Campus Recreation
+                                        </PartnerLink>
+                                    </li>
                                 </ul>
                             </div>
 
                             <div>
                                 <p className={styles.itemSize}>
-                                    Carolina Housing
+                                    <PartnerLink href="https://www.unc.edu/life/housing/">
+                                        Carolina Housing
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Carolina Center for Public Service
+                                    <PartnerLink href="https://ccps.unc.edu/">
+                                        Carolina Center for Public Service
+                                    </PartnerLink>
                                 </p>
-                                <p className={styles.itemSize}>Athletics</p>
                                 <p className={styles.itemSize}>
-                                    UNC Gillings School of Global Public Health
+                                    <PartnerLink href="https://www.unc.edu/athletics/">
+                                        Athletics
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://sph.unc.edu/">
+                                        UNC Gillings School of Global Public
+                                        Health
+                                    </PartnerLink>
                                 </p>
                             </div>
 
                             <div>
                                 <p className={styles.itemSize}>
-                                    Student Government
+                                    <PartnerLink href="https://executivebranch.unc.edu/">
+                                        Student Government
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Bowles Center for Alcohol Studies
+                                    <PartnerLink href="https://www.med.unc.edu/alcohol/about/center-overview-and-welcome/">
+                                        Bowles Center for Alcohol Studies
+                                    </PartnerLink>
                                 </p>
-                                <p className={styles.itemSize}>Police</p>
                                 <p className={styles.itemSize}>
-                                    Graduate & Professional Student Government
+                                    <PartnerLink href="https://police.unc.edu/">
+                                        Police
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://heellife.unc.edu/organization/gpsg">
+                                        Graduate & Professional Student
+                                        Government
+                                    </PartnerLink>
                                 </p>
                             </div>
                         </div>
@@ -222,40 +289,55 @@ export default function People() {
                         <div className={styles.grid}>
                             <div>
                                 <p className={styles.itemSize}>
-                                    Manager's Office
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Town-Manager">
+                                        Manager's Office
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Community Connections
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Housing-and-Community-Development">
+                                        Housing & Community Development
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Economic Development
-                                </p>
-                                <p className={styles.itemSize}>
-                                    Community Arts & Culture
-                                </p>
-                            </div>
-
-                            <div>
-                                <p className={styles.itemSize}>
-                                    Community Relations
-                                </p>
-                                <p className={styles.itemSize}>
-                                    Police Department
-                                </p>
-                                <p className={styles.itemSize}>
-                                    Emergency Management
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Economic-Development">
+                                        Economic Development
+                                    </PartnerLink>
                                 </p>
                             </div>
 
                             <div>
                                 <p className={styles.itemSize}>
-                                    Communications
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Police">
+                                        Police Department
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Code Enforcement
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Services/Emergency-Updates">
+                                        Emergency Management
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Fire Department
+                                    <PartnerLink href="https://www.chapelhillarts.org/">
+                                        Community Arts & Culture
+                                    </PartnerLink>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Communications-and-Engagement">
+                                        Communications & Engagement
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Business-and-Development/Code-Enforcement">
+                                        Code Enforcement
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://www.chapelhillnc.gov/Town-Government/Departments-and-Offices/Fire">
+                                        Fire Department
+                                    </PartnerLink>
                                 </p>
                             </div>
                         </div>
@@ -273,21 +355,29 @@ export default function People() {
                         <div className={styles.grid}>
                             <div>
                                 <p className={styles.itemSize}>
-                                    Health Department
+                                    <PartnerLink href="https://www.orangecountync.gov/204/Health-Department">
+                                        Health Department
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Criminal Justic Resource Department
+                                    <PartnerLink href="https://www.orangecountync.gov/432/Criminal-Justice-Resource-Department">
+                                        Criminal Justice Resource Department
+                                    </PartnerLink>
                                 </p>
                             </div>
 
                             <div>
                                 <p className={styles.itemSize}>
-                                    Emergency Services
+                                    <PartnerLink href="https://www.orangecountync.gov/640/Emergency-Services">
+                                        Emergency Services
+                                    </PartnerLink>
                                 </p>
                             </div>
                             <div>
                                 <p className={styles.itemSize}>
-                                    Sheriff's Office
+                                    <PartnerLink href="https://www.ocsonc.com/">
+                                        Sheriff's Office
+                                    </PartnerLink>
                                 </p>
                             </div>
                         </div>
@@ -305,36 +395,55 @@ export default function People() {
                         <div className={styles.grid}>
                             <div>
                                 <p className={styles.itemSize}>
-                                    Carolina Student Legal Services
+                                    <PartnerLink href="https://www.uncstudentlegal.unc.edu/">
+                                        Carolina Student Legal Services
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Orange County ABC Stores & Board
+                                    <PartnerLink href="https://orangeabc.com/">
+                                        Orange County ABC Stores & Board
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Chapel Hill-Carrboro City Schools
-                                </p>
-                            </div>
-
-                            <div>
-                                <p className={styles.itemSize}>
-                                    Marian Cheek Jackson Center for Making and
-                                    Saving History
+                                    <PartnerLink href="https://www.chccs.org/">
+                                        Chapel Hill-Carrboro City Schools
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Chapel Hill Downtown Partnership
-                                </p>
-                                <p className={styles.itemSize}>
-                                    Chapel Hill-Carrboro City Schools PTA
-                                    Council
+                                    Carpe Diem & Mini Diem
                                 </p>
                             </div>
 
                             <div>
                                 <p className={styles.itemSize}>
-                                    Orange Partnership
+                                    <PartnerLink href="https://jacksoncenter.info/">
+                                        Marian Cheek Jackson Center for Making
+                                        and Saving History
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
-                                    Town of Carrboro Police Department
+                                    <PartnerLink href="http://www.downtownchapelhill.com/">
+                                        Chapel Hill Downtown Partnership
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://chccsptacouncil.blogspot.com/">
+                                        Chapel Hill-Carrboro City Schools PTA
+                                        Council
+                                    </PartnerLink>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://www.orangepartnership.org/">
+                                        Orange Partnership
+                                    </PartnerLink>
+                                </p>
+                                <p className={styles.itemSize}>
+                                    <PartnerLink href="https://www.townofcarrboro.org/225/Police">
+                                        Town of Carrboro Police Department
+                                    </PartnerLink>
                                 </p>
                                 <p className={styles.itemSize}>
                                     Local Businesses
