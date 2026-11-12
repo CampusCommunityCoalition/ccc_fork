@@ -389,7 +389,7 @@ export default function People() {
                                 style={{ marginRight: "10px" }}
                             ></img>
                             <h1 style={{ fontSize: "32px", color: "#05325C" }}>
-                                Additonal Partners
+                                Additional Partners
                             </h1>
                         </div>
                         <div className={styles.grid}>
