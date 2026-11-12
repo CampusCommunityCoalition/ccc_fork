@@ -71,9 +71,6 @@ The partners appear under the heading **"Coalition Partners"** in four boxes, ea
 | Orange County       | `Orange County`                  | Yellow    |
 | Additional Partners | `Additonal Partners`             | Dark blue |
 
-> The heading is spelled `Additonal Partners` (missing an "i") in the file. Search for it exactly like that, or search for `AdditionalPartnersLogo` instead.
-> The search for `Orange County` and `Town of Chapel Hill` will find several spots; use the one that sits right above a heading in this form: `<h1 style={{ fontSize: "32px", color: ...`.
-
 Underneath each heading, partner names are arranged in **three columns**. In the file, each column is one block that starts with `<div>` and ends with `</div>`. Each partner name inside a column is one line item. It looks like this (Orange County shown as the example):
 
 ```
